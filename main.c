@@ -55,7 +55,7 @@ printColorAt(GdkDrawable *drawable, gint x, gint y)
 	if (short_format) {
 		printf("#%06X\n", color);
 	} else {
-		printf("R: %3d, G: %3d, B: %3d | Hex: #%06X\n",
+		printf("RGB:%3d,%3d,%3d\nHex: #%06X\n",
 			(color >> 0x10) & 0xFF,
 			(color >> 0x08) & 0xFF,
 			(color >> 0x00) & 0xFF,
